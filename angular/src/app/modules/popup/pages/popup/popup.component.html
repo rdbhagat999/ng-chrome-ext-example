@@ -1,0 +1,10 @@
+<h1>Popup</h1>
+<p>You can easily send messages from the popup to the content page with the provided Tab ID!
+  (tabId=<strong>{{ tabId }}</strong>)</p>
+
+<a routerLink="/options">Options</a>
+
+<input type="number" min="1" value="2" max="10" #input>
+<button (click)="onClick(input?.value)">Click me to test</button>
+
+<p><strong>{{ message }}</strong></p>
